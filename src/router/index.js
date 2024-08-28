@@ -6,6 +6,7 @@ import User from "../pages/user";
 import OtherPage1 from "../pages/others/otherPage1";
 import OtherPage2 from "../pages/others/otherPage2";
 import NotFound from "../pages/notFound";
+import Login from "../pages/login/index";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "goods",
+        path: "mall",
         element: <Goods />,
       },
       {
@@ -35,19 +36,23 @@ const router = createBrowserRouter([
         element: <User />,
       },
       {
-        path: "others",
+        path: "other",
         children: [
           {
-            path: "otherPage1",
+            path: "PageOne",
             element: <OtherPage1 />,
           },
           {
-            path: "otherPage2",
+            path: "PageTwo",
             element: <OtherPage2 />,
           },
         ],
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 

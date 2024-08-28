@@ -2,6 +2,8 @@ import React from "react";
 import * as iconMap from "@ant-design/icons"; //把所有的icon取出来，iconMap作为一个对象包含antD的所有icon。键值对形式，值就是icon组件
 import MenuConfig from "../../config";
 import { Button, Layout, Menu, theme } from "antd";
+import { useNavigate } from "react-router-dom";
+
 const { Header, Sider, Content } = Layout;
 
 const items = MenuConfig.map((item) => {
@@ -23,6 +25,12 @@ const items = MenuConfig.map((item) => {
 });
 
 const CommonAside = ({ collapsed }) => {
+  const navigate = useNavigate();
+  //点击菜单跳转
+  const selectMenu = (e) => {
+    console.log(e.key);
+    navigate(e.key);
+  };
   return (
     <Sider trigger={null} collapsed={collapsed}>
       <h3 className="app-name"> {collapsed ? "User" : "User Management"}</h3>
@@ -34,6 +42,7 @@ const CommonAside = ({ collapsed }) => {
         style={{
           height: "100%",
         }}
+        onClick={selectMenu}
       />
     </Sider>
   );

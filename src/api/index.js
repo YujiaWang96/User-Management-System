@@ -7,3 +7,43 @@ export const getData = () => {
     method: "get",
   });
 };
+
+export const getUser = (params) => {
+  return http.request({
+    url: "/home/getUser",
+    method: "get",
+    params,
+  });
+};
+//新增用户的方法
+export const addUser = (data) => {
+  return http.request({
+    url: "/home/addUser",
+    method: "post",
+    data,
+  });
+};
+//修改用户的方法
+export const editUser = (data) => {
+  return http.request({
+    url: "/home/editUser",
+    method: "post",
+    data,
+  });
+};
+//删除用户的方法
+export const deleteUser = (data) => {
+  return http.request({
+    url: "/home/deleteUser",
+    method: "post",
+    data,
+  });
+};
+
+export const getMenu = (data) => {
+  return http.request({
+    url: "/login",
+    method: "post",
+    data,
+  });
+};

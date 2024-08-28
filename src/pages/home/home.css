@@ -32,3 +32,46 @@
   color: #666;
   margin-right: 10px;
 }
+.home .num {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .num .ant-card {
+  width: 33%;
+}
+.home .num .ant-card-body {
+  display: flex;
+  padding: 10px 25px;
+}
+
+.home .num .icon-box {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 85px;
+  color: #fff;
+  border-radius: 5px;
+}
+.home .anticon {
+  font-size: 30px;
+}
+
+.home .num .detail .num {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.home .num .detail .txt {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+.home .num .detail {
+  margin-left: 15px;
+}
+
+.home .graph {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}

@@ -1,0 +1,34 @@
+.login-container {
+  width: 450px;
+  border: 1px solid #eaeaea;
+  margin: 180px auto;
+  padding: 35px 35px 15px 35px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 2px #cac6c6;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+.login-container:hover {
+  box-shadow: 0 0 25px #cac6c6;
+}
+
+.login-container .login_title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #505458;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.login-container .el-input {
+  width: 198px;
+}
+
+.login-container .login-button {
+  display: flex;
+  justify-content: center;
+}
+.ant-form-item .ant-form-item-label > label {
+  font-size: 17px;
+}
