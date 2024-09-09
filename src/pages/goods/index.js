@@ -1,6 +1,6 @@
 import React from "react";
 
 const Goods = () => {
-  return <div>这是Goods</div>;
+  return <div>This is Goods</div>;
 };
 export default Goods;
